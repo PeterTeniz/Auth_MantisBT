@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"MantisBT Team"
+		]
+	},
+	"auth_mantisbt-desc": "Automatically logs-in users using the <code>REMOTE_USER</code> environment variable"
+}
