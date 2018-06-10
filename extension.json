@@ -1,0 +1,42 @@
+{
+	"name": "Auth_MantisBT",
+	"version": "1.0.0",
+	"requires": {
+		"MediaWiki": ">= 1.27.0"
+	},
+	"config": {
+		"_prefix": "wgAuthMantisBT",
+		"UserName": null,
+		"UserNameReplaceFilter": null,
+		"UserNameBlacklistFilter": null,
+		"UserNameWhitelistFilter": null,
+		"UserPrefs": null,
+		"UserPrefsForced": null,
+		"UserUrls": null,
+		"AllowUserSwitch": false,
+		"RemoveAuthPagesAndLinks": true,
+		"Priority": 50
+	},
+	"type": "other",
+	"author": [
+		"[[mw:User:MantisBTTeam|MantisBT Team]]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Auth_MantisBT",
+	"descriptionmsg": "auth_mantisbt-desc",
+	"MessagesDirs": {
+		"Auth_MantisBT": [
+			"i18n"
+		]
+	},
+	"license-name": "GPL-2.0+",
+	"SessionProviders": {
+		"Auth_MantisBT": {
+			"class": "MediaWiki\\Extensions\\Auth_MantisBT\\AuthMantisBTSessionProvider"
+		}
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extensions\\Auth_MantisBT\\UserNameSessionProvider": "src/UserNameSessionProvider.php",
+		"MediaWiki\\Extensions\\Auth_MantisBT\\AuthMantisBTSessionProvider": "src/AuthMantisBTSessionProvider.php"
+	},
+	"manifest_version": 1
+}
